@@ -1,0 +1,84 @@
+
+.home {
+  box-shadow: 0px 0px 2px 2px white;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 10px;
+  /*background: linear-gradient(45deg, blue,cyan, rgb(1, 8, 76),rgb(157, 18, 18), rgb(173, 113, 1), red);*/
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite; /* Smooth animation */
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 100%; 
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+.start, .profile_desc, .image {
+  flex-shrink: 0; /* Prevent elements from resizing */
+}
+.profile_desc {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 130px;
+}
+.image {
+  box-shadow: 0px 0px 2px 2px white;
+  position: absolute;
+  margin-top: 115px;
+  margin-left: 800px;
+}
+.button {
+  box-shadow: 0px 0px 2px 2px white; 
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 500px;      
+}
+.mark {
+  font-size: 35px;
+  color: white;
+}
+
+.name {
+  font-size: 3rem; /* Adjust the size as needed */
+  font-weight: bold; /* Make it bold */
+  background: linear-gradient(90deg, 
+              #ff7f7f,  /* Light Pink */
+              #ff4dff,  /* Vivid Pink */
+              #a75dff,  /* Purple */
+              #8a4eff,  /* Deep Purple */
+              #6f5baf,  /* Violet */
+              #5b5d9a); /* Slate Violet */
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text; /* For other browsers */
+}
+.gold-gradient {
+  font-size: 2rem; /* Adjust the size as needed */
+  font-weight: bold; /* Make it bold */
+  background: linear-gradient(45deg, red, orange,blue );
+  background-size: 400% 400%; /* To create the smooth transition */
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text; /* For other browsers */
+  animation: gradientAnimations 10s ease infinite; /* Smooth animation */
+}
+
+@keyframes gradientAnimations {
+  0% {
+    background-position: 0% 100%; /* Start at bottom-left with red */
+  }
+  50% {
+    background-position: 100% 0%; /* Move towards yellow */
+  }
+  100% {
+    background-position: 0% 100%; /* Return to starting position */
+  }
+}
+
+

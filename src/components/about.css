@@ -1,0 +1,61 @@
+.about-container {
+  background-color: #000; /* Almost black background */
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-background {
+  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  filter: blur(100px);
+}
+
+.heading {
+  font-family: sans-serif;
+  background: linear-gradient(45deg, cyan, hotpink, cyan);
+  background-size: 300% 300%; 
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  cursor: pointer; 
+  animation: headergradient 10s ease infinite;
+}
+
+@keyframes headergradient {
+  0% {
+    background-position: 0% 50%; /* Start from the left */
+  }
+  50% {
+    background-position: 100% 50%; /* Move to the right */
+  }
+  100% {
+    background-position: 0% 50%; /* Move back to the left */
+  }
+}
+.para {
+  color: #d3d3d3;
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75rem; /* leading-relaxed */
+  max-width: 760px;
+  text-align: center;
+  z-index: 1;
+  transition: color 1s ease; /* Gradual transition for paragraph color */
+}
+
+.highlight {
+  color: #03fca5;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .para {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
