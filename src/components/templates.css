@@ -1,0 +1,148 @@
+.templates-container {
+  /* box-shadow: 0px 0px 1px 1px white; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000; 
+  overflow: hidden;
+  padding: 20px;
+}
+
+.gradient-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Top-left gradient */
+.gradient-background::before {
+  content: '';
+  position: absolute;
+  top: -250px;
+  left: -250px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  filter: blur(100px);
+}
+
+/* Bottom-right gradient */
+.gradient-background::after {
+  content: '';
+  position: absolute;
+  bottom: -250px;
+  right: -250px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  filter: blur(100px);
+}
+
+.heading {
+  font-family: sans-serif;
+  background: linear-gradient(45deg, cyan, hotpink, cyan);
+  background-size: 300% 300%; 
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  cursor: pointer; 
+  animation: headergradient 10s ease infinite;
+  text-align: center;
+  margin-bottom: 15px; /* Space between heading and bar */
+}
+
+.underline-bar {
+  width: 320px;
+  height: 4px; 
+  background-color: white;
+  margin-bottom: 25px;
+  z-index: 20;
+}
+
+@keyframes headergradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Paragraph styling */
+.para {
+  margin-left: 20px;
+  margin-top: 10px;
+  z-index: 20;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.gradient-highlight {
+  background: linear-gradient(45deg, cyan, hotpink, cyan);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.elegant-highlight {
+  background: linear-gradient(45deg, rgb(255, 0, 255), rgb(194, 4, 36));
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cool-highlight {
+  background: linear-gradient(45deg, cyan, lime);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.how-to-add-highlight {
+  background: linear-gradient(45deg, red, yellow,red);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: howtoaddgradient 8s ease infinite;
+}
+
+.where-to-add-highlight {
+  background: linear-gradient(45deg, red, yellow,red);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.preview-highlight{
+  background: linear-gradient(45deg, blue, cyan, blue);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-background-two::before {
+  content: '';
+  position: absolute;
+  top: -250px; /* Keep it at the top */
+  right: -250px; /* Move to the right */
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  filter: blur(100px);
+}
+
+.gradient-background-two::after {
+  content: '';
+  position: absolute;
+  bottom: -250px; /* Keep it at the bottom */
+  left: -250px; /* Move to the left */
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  filter: blur(100px);
+}
+

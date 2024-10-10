@@ -4,7 +4,7 @@
   position: relative;
   margin-top: 15px;
   margin-left: 10px;
-  /*background: linear-gradient(45deg, blue,cyan, rgb(1, 8, 76),rgb(157, 18, 18), rgb(173, 113, 1), red);*/
+  background: linear-gradient(45deg, blue,cyan, rgb(1, 8, 76),rgb(157, 18, 18), rgb(173, 113, 1), red);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite; /* Smooth animation */
 }
