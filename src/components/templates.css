@@ -1,14 +1,13 @@
 .templates-container {
-  /* box-shadow: 0px 0px 1px 1px white; */
+  box-shadow: 0px 0px 1px 1px white;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000; 
+  background-color: #000;
   overflow: hidden;
-  padding: 20px;
+  padding: 10px;
 }
-
 .gradient-background {
   position: absolute;
   top: 0;
@@ -17,52 +16,55 @@
   height: 100%;
   z-index: 0;
 }
-
-/* Top-left gradient */
 .gradient-background::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -250px;
   left: -250px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 1) 0%,
+    rgba(138, 43, 226, 0.7) 30%,
+    rgba(0, 0, 0, 0) 80%
+  );
   filter: blur(100px);
 }
-
-/* Bottom-right gradient */
 .gradient-background::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -250px;
   right: -250px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 1) 0%,
+    rgba(138, 43, 226, 0.7) 30%,
+    rgba(0, 0, 0, 0) 80%
+  );
   filter: blur(100px);
 }
-
 .heading {
   font-family: sans-serif;
   background: linear-gradient(45deg, cyan, hotpink, cyan);
-  background-size: 300% 300%; 
+  background-size: 300% 300%;
   background-clip: text;
-  -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
-  cursor: pointer; 
+  cursor: pointer;
   animation: headergradient 10s ease infinite;
   text-align: center;
   margin-bottom: 15px; /* Space between heading and bar */
 }
-
 .underline-bar {
   width: 320px;
-  height: 4px; 
+  height: 4px;
   background-color: white;
-  margin-bottom: 25px;
+  margin-top: 58px;
   z-index: 20;
+  position: absolute;
 }
-
 @keyframes headergradient {
   0% {
     background-position: 0% 50%;
@@ -74,10 +76,8 @@
     background-position: 0% 50%;
   }
 }
-
-/* Paragraph styling */
 .para {
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 10px;
   z-index: 20;
   font-size: 1.1rem;
@@ -89,14 +89,12 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .elegant-highlight {
   background: linear-gradient(45deg, rgb(255, 0, 255), rgb(194, 4, 36));
   background-size: 300% 300%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .cool-highlight {
   background: linear-gradient(45deg, cyan, lime);
   background-size: 300% 300%;
@@ -104,45 +102,170 @@
   -webkit-text-fill-color: transparent;
 }
 .how-to-add-highlight {
-  background: linear-gradient(45deg, red, yellow,red);
+  background: linear-gradient(45deg, red, yellow, red);
   background-size: 300% 300%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: howtoaddgradient 8s ease infinite;
 }
-
 .where-to-add-highlight {
-  background: linear-gradient(45deg, red, yellow,red);
+  background: linear-gradient(45deg, red, yellow, red);
   background-size: 300% 300%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.preview-highlight{
+.preview-highlight {
   background: linear-gradient(45deg, blue, cyan, blue);
   background-size: 300% 300%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient-background-two::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -250px; /* Keep it at the top */
   right: -250px; /* Move to the right */
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 1) 0%,
+    rgba(138, 43, 226, 0.7) 30%,
+    rgba(0, 0, 0, 0) 80%
+  );
   filter: blur(100px);
 }
-
 .gradient-background-two::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -250px; /* Keep it at the bottom */
   left: -250px; /* Move to the left */
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 1) 0%,
+    rgba(138, 43, 226, 0.7) 30%,
+    rgba(0, 0, 0, 0) 80%
+  );
   filter: blur(100px);
 }
+.text-white {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.gradient-preview {
+  font-family: sans-serif;
+  background: linear-gradient(45deg, cyan, blue, cyan);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  animation: headergradient 10s ease infinite;
+}
+.gradient-comments {
+  background: linear-gradient(45deg, cyan, lime);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-comments 3s infinite;
+}
 
+@keyframes gradient-comments {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.warning-box {
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.2);
+  color: white;
+  align-items: center;
+  z-index: 30;
+}
+.warning-box p {
+  margin: 0;
+  font-size: 1.1rem;
+  z-index: 20;
+}
+.warning-box p::before {
+  content: "⚠️ ";
+  font-size: 1.3rem;
+  color: red;
+  color: white;
+}
+/* CSS for the tab buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background-color: #e0e0ff; /* Light violet background */
+  color: #4b0082; /* Indigo text color */
+  border: 2px solid #8a2be2; /* 2px violet border */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  border-radius: 0.75rem; /* Tailwind's rounded-xl equivalent */
+}
+
+/* Active button style */
+.tab-button.active {
+  background-color: #8a2be2; /* Darker violet for active tab */
+  color: white; /* White text for the active tab */
+  border: 2px solid #8a2be2; /* Darker violet border for active tab */
+}
+
+/* Hover effect for tab buttons */
+.tab-button:hover {
+  background-color: #7b68ee; /* Medium slate blue background on hover */
+  color: white; /* White text on hover */
+}
+
+/* Styling for the content */
+.tab-content {
+  padding: 20px;
+  border: 2px solid purple; /* 2px violet border */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light background for content area */
+  color: #333; /* Dark text color */
+  height: calc(100% - 50px); /* Ensures content nearly fills the available height */
+}
+
+/* Optional: Adding some margin and padding for the container */
+.content-container {
+  position: relative; /* Needed for proper positioning */
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid white; /* 2px violet border inside */
+  
+  /* Inset box-shadow to sit between the border and content */
+  box-shadow: inset 0px 0px 3px 3px blue; 
+  
+  outline: 3px solid blue; /* 2px violet outline outside */
+  outline-offset: 0px; /* Moves the outline outside the border */
+  
+  height: 415px; /* Same as before */
+  width: 830px; /* Same as before */
+}
+
+
+/* Styling for the preview and code text */
+#preview-content p,
+#code-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Darker text for readability */
+}
