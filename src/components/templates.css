@@ -55,7 +55,7 @@
   cursor: pointer;
   animation: headergradient 10s ease infinite;
   text-align: center;
-  margin-bottom: 15px; /* Space between heading and bar */
+  margin-bottom: 15px;
 }
 .underline-bar {
   width: 320px;
@@ -124,8 +124,8 @@
 .gradient-background-two::before {
   content: "";
   position: absolute;
-  top: -250px; /* Keep it at the top */
-  right: -250px; /* Move to the right */
+  top: -250px;
+  right: -250px; 
   width: 500px;
   height: 500px;
   background: radial-gradient(
@@ -139,8 +139,8 @@
 .gradient-background-two::after {
   content: "";
   position: absolute;
-  bottom: -250px; /* Keep it at the bottom */
-  left: -250px; /* Move to the left */
+  bottom: -250px; 
+  left: -250px; 
   width: 500px;
   height: 500px;
   background: radial-gradient(
@@ -201,71 +201,104 @@
   color: red;
   color: white;
 }
-/* CSS for the tab buttons */
 .tab-buttons {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
   margin-bottom: 15px;
 }
-
 .tab-button {
   padding: 10px 20px;
-  background-color: #e0e0ff; /* Light violet background */
-  color: #4b0082; /* Indigo text color */
-  border: 2px solid #8a2be2; /* 2px violet border */
+  background-color: #e0e0ff; 
+  color: #4b0082; 
+  border: 2px solid #8a2be2; 
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
-  border-radius: 0.75rem; /* Tailwind's rounded-xl equivalent */
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  border-radius: 0.75rem;
 }
-
-/* Active button style */
 .tab-button.active {
-  background-color: #8a2be2; /* Darker violet for active tab */
-  color: white; /* White text for the active tab */
-  border: 2px solid #8a2be2; /* Darker violet border for active tab */
+  background-color: #8400ff;
+  color: white;
+  border: 2px solid white;
 }
-
-/* Hover effect for tab buttons */
 .tab-button:hover {
-  background-color: #7b68ee; /* Medium slate blue background on hover */
-  color: white; /* White text on hover */
+  background-color: #8400ff; 
+  color: white;
 }
-
-/* Styling for the content */
 .tab-content {
   padding: 20px;
-  border: 2px solid purple; /* 2px violet border */
+  border: 3px solid #8400ff;
   border-radius: 5px;
-  background-color: #f9f9f9; /* Light background for content area */
-  color: #333; /* Dark text color */
-  height: calc(100% - 50px); /* Ensures content nearly fills the available height */
+  background-color: #f9f9f9; 
+  color: #333; 
+  height: calc(100% - 50px); 
 }
-
-/* Optional: Adding some margin and padding for the container */
 .content-container {
-  position: relative; /* Needed for proper positioning */
+  position: relative; 
   margin-top: 20px;
   padding: 20px;
-  border: 2px solid white; /* 2px violet border inside */
-  
-  /* Inset box-shadow to sit between the border and content */
+  border: 2px solid white; 
   box-shadow: inset 0px 0px 3px 3px blue; 
-  
-  outline: 3px solid blue; /* 2px violet outline outside */
-  outline-offset: 0px; /* Moves the outline outside the border */
-  
-  height: 415px; /* Same as before */
-  width: 830px; /* Same as before */
+  outline: 3px solid blue;
+  outline-offset: 0px;
+  height: 415px;
+  width: 830px; 
 }
-
-
-/* Styling for the preview and code text */
 #preview-content p,
 #code-content p {
   margin: 10px 0;
   font-size: 16px;
   line-height: 1.5;
-  color: #333; /* Darker text for readability */
+  color: #333;
 }
+.but { 
+  position: absolute;
+  top: 125px;
+  right: 110px;
+  padding: 8px 16px;
+  background-color: #4b0082;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border: 2px solid #8a2be2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+.but:hover {
+  background-color: #8a2be2; 
+  color: white;
+  box-shadow: 0px 0px 8px 3px rgba(138, 43, 226, 0.7);
+  border-color: white;
+}
+@keyframes dullBright {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+.more-symbols {
+  display: inline-block;
+}
+.but:hover .more-symbols {
+  animation: dullBright 1.5s infinite;
+}
+.but:hover .more-symbols:first-child {
+  animation-delay: 0s;
+}
+.but:hover .more-symbols:last-child {
+  animation-delay: 0.75s;
+}
+.more-text {
+  margin-right: 5px;
+}
+
+

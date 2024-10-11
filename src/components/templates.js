@@ -1,9 +1,8 @@
-//import React from 'react';
-import React, { useState } from 'react'; // Import useState to manage state
+import React, { useState } from 'react';
 import './templates.css';
 
 export default function Templates() {
-  const [activeTab, setActiveTab] = useState('preview'); // Add state for active tab
+  const [activeTab, setActiveTab] = useState('preview');
 
   return (
     <div>
@@ -36,7 +35,7 @@ export default function Templates() {
           </div>
       </div>
       
-      <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px]'>
+      <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px] relative'>
         <div className="gradient-background-two">
           <p className='text-white justify-center text-center w-[900px]'>
             If you are <span className='how-to-add-highlight font-bold'>New to CSS</span>, it is recommended to have a look on <u><span className='preview-highlight font-bold'>CSS</span></u>, where you can learn basics of how CSS works with HTML to display a wonderful look. If you have enough knowledge about CSS lets move on!. Below the components are provided for each section where you can copy and modify as you want!.
@@ -74,8 +73,14 @@ export default function Templates() {
           </div>
         )}
       </div>
+      <button className='but mr-[-15px]'>
+        <span className="more-text">More</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+      </button>
 
-        </div>
+      </div>
       </div>
       
       <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px]'>
