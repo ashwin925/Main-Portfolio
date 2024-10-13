@@ -30,9 +30,9 @@ export default function Templates() {
             are also provided for you to easily identify what line of code does what, cool right? Take a look at the awesome
             components given below!
           </p>
-          <div class="warning-box flex h-[48px] w-[302px] mt-7 pl-[13px] pb-[3px] rounded-lg">
-            <p> You need to know CSS for this</p>
-          </div>
+        <div class="warning-box flex h-[48px] w-[302px] mt-7 pl-[13px] pb-[3px] rounded-lg">
+          <p> You need to know CSS for this</p>
+        </div>
       </div>
       
       <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px] relative'>
@@ -42,7 +42,7 @@ export default function Templates() {
           </p>
 
           {/* Tab Component */}
-          <div className="content-container h-[415px] w-[830px] rounded-lg">
+        <div className="content-container h-[415px] w-[830px] rounded-lg">
         <div className="tab-buttons">
           <button
             className={`tab-button ${activeTab === 'preview' ? 'active' : ''}`}
@@ -63,13 +63,13 @@ export default function Templates() {
         {/* Tab Content */}
         {activeTab === 'preview' ? (
           <div className="tab-content" id="preview-content">
-            <p>Image goes here</p>
-            <p>This is the preview section. Add your image here later!</p>
+            <p>Preview Section</p>
+            <p>In the following Preview section you will see how the component looks like in action!</p>
           </div>
         ) : (
           <div className="tab-content" id="code-content">
-            <p>Code goes here</p>
-            <p>This is the code section. Add your code here later!</p>
+            <p>Code Section</p>
+            <p>In the following Code section you will see how the codwe of the component is with comments!</p>
           </div>
         )}
       </div>
@@ -85,10 +85,185 @@ export default function Templates() {
       
       <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px]'>
         <div className="gradient-background"></div>
+        <p className='text-white justify-center text-center w-[900px] mr-[100px]'>
+          In this section you can find multiple components for the <span className='how-to-add-highlight font-bold'>Div</span> container :-
+        </p>
+
+          {/* preview Component for div */}
+        <div className="content-container h-[485px] w-[830px] mr-[70px] rounded-lg">
+        <div className="tab-buttons">
+          <button
+            className={`tab-button ${activeTab === 'preview' ? 'active' : ''}`}
+            onClick={() => setActiveTab('preview')}
+            id="preview-btn"
+          >
+            Preview
+          </button>
+          <button
+            className={`tab-button ${activeTab === 'code' ? 'active' : ''}`}
+            onClick={() => setActiveTab('code')}
+            id="code-btn"
+          >
+            Code
+          </button>
+        </div>
+
+        {/* code Content for div */}
+        {activeTab === 'preview' ? (
+          <div className="tab-content" id="preview-content">
+            <p>Preview Section</p>
+            <p>In the following Preview section you will see how the component looks like in action!</p>
+          </div>
+        ) : (
+          <div className="tab-content" id="code-content">
+            <p>Code Section</p>
+            <p>In the following Code section you will see how the codwe of the component is with comments!</p>
+          </div>
+        )}
+      </div>
+      <button className='but mr-[-15px]'>
+        <span className="more-text">More</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+      </button>
       </div>
       
       <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px]'>
-        <div className="gradient-background-two"></div>  
+        <div className="gradient-background-two"></div> 
+        <p className='text-white justify-center text-center w-[900px] mr-[100px]'>
+          In this section you can find multiple components for the <span className='preview-highlight font-bold'>Heading</span> container :-
+        </p>
+
+          {/* preview content for Heading*/}
+        <div className="content-container h-[485px] w-[830px] mr-[70px] rounded-lg">
+        <div className="tab-buttons">
+          <button
+            className={`tab-button ${activeTab === 'preview' ? 'active' : ''}`}
+            onClick={() => setActiveTab('preview')}
+            id="preview-btn"
+          >
+            Preview
+          </button>
+          <button
+            className={`tab-button ${activeTab === 'code' ? 'active' : ''}`}
+            onClick={() => setActiveTab('code')}
+            id="code-btn"
+          >
+            Code
+          </button>
+        </div>
+
+        {/* code Content for Heading*/}
+        {activeTab === 'preview' ? (
+          <div className="tab-content" id="preview-content">
+            <p>Preview Section</p>
+            <p>In the following Preview section you will see how the component looks like in action!</p>
+          </div>
+        ) : (
+          <div className="tab-content" id="code-content">
+            <p>Code Section</p>
+            <p>In the following Code section you will see how the codwe of the component is with comments!</p>
+          </div>
+        )}
+      </div>
+      <button className='but mr-[-15px]'>
+        <span className="more-text">More</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+      </button> 
+      </div>
+      <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px]'>
+        <div className="gradient-background"></div>
+        <p className='text-white justify-center text-center w-[900px] mr-[100px]'>
+        In this section you can find multiple components for the <span className='cool-highlight font-bold'>Para</span> container :-
+        </p>
+
+          {/* preview Component for Para */}
+        <div className="content-container h-[485px] w-[830px] mr-[70px] rounded-lg">
+        <div className="tab-buttons">
+          <button
+            className={`tab-button ${activeTab === 'preview' ? 'active' : ''}`}
+            onClick={() => setActiveTab('preview')}
+            id="preview-btn"
+          >
+            Preview
+          </button>
+          <button
+            className={`tab-button ${activeTab === 'code' ? 'active' : ''}`}
+            onClick={() => setActiveTab('code')}
+            id="code-btn"
+          >
+            Code
+          </button>
+        </div>
+
+        {/* code Content for Para */}
+        {activeTab === 'preview' ? (
+          <div className="tab-content" id="preview-content">
+            <p>Preview Section</p>
+            <p>In the following Preview section you will see how the component looks like in action!</p>
+          </div>
+        ) : (
+          <div className="tab-content" id="code-content">
+            <p>Code Section</p>
+            <p>In the following Code section you will see how the codwe of the component is with comments!</p>
+          </div>
+        )}
+      </div>
+      <button className='but mr-[-15px]'>
+        <span className="more-text">More</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+      </button>
+      </div>
+      
+      <div className='templates-container h-[555px] w-[1210px] m-[5px] mt-[-5px]'>
+        <div className="gradient-background-two"></div> 
+        <p className='text-white justify-center text-center w-[900px] mr-[100px]'>
+          In this section you can find multiple components for the <span className='elegant-highlight font-bold'>Buttons</span> container :-
+        </p>
+
+          {/* preview content for Buttons*/}
+        <div className="content-container h-[485px] w-[830px] mr-[70px] rounded-lg">
+        <div className="tab-buttons">
+          <button
+            className={`tab-button ${activeTab === 'preview' ? 'active' : ''}`}
+            onClick={() => setActiveTab('preview')}
+            id="preview-btn"
+          >
+            Preview
+          </button>
+          <button
+            className={`tab-button ${activeTab === 'code' ? 'active' : ''}`}
+            onClick={() => setActiveTab('code')}
+            id="code-btn"
+          >
+            Code
+          </button>
+        </div>
+
+        {/* code Content for Buttons*/}
+        {activeTab === 'preview' ? (
+          <div className="tab-content" id="preview-content">
+            <p>Preview Section</p>
+            <p>In the following Preview section you will see how the component looks like in action!</p>
+          </div>
+        ) : (
+          <div className="tab-content" id="code-content">
+            <p>Code Section</p>
+            <p>In the following Code section you will see how the codwe of the component is with comments!</p>
+          </div>
+        )}
+      </div>
+      <button className='but mr-[-15px]'>
+        <span className="more-text">More</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+        <span className="more-symbols">&gt;</span>
+      </button> 
       </div>
     </div>
   );

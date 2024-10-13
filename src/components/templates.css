@@ -90,7 +90,7 @@
   -webkit-text-fill-color: transparent;
 }
 .elegant-highlight {
-  background: linear-gradient(45deg, rgb(255, 0, 255), rgb(194, 4, 36));
+  background: linear-gradient(45deg, rgb(179, 1, 255), rgb(236, 143, 189), rgb(145, 0, 248)); 
   background-size: 300% 300%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -244,8 +244,6 @@
   box-shadow: inset 0px 0px 3px 3px blue; 
   outline: 3px solid blue;
   outline-offset: 0px;
-  height: 415px;
-  width: 830px; 
 }
 #preview-content p,
 #code-content p {
